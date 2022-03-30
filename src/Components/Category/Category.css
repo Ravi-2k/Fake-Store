@@ -1,0 +1,68 @@
+.category {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryHeading {
+  flex-basis: 20%;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.categoryProductContainer {
+  flex-basis: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0rem;
+}
+
+.categoryProduct {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 2rem;
+  border-radius: 0.6rem;
+  transition: 0.5s;
+}
+
+.categoryProduct:hover {
+  cursor: pointer;
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2),
+    0 16px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.categoryProductImgContainer {
+  flex-basis: 90%;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.categoryProductImgContainer > img {
+  width: 60%;
+}
+
+.categoryProductInfoContainer {
+  height: 10rem;
+  text-align: center;
+  padding-top: 1rem;
+  /* background-color: rgb(229, 236, 246); */
+  background-image: linear-gradient(white, rgb(229, 236, 246));
+  border-radius: 0 0 0.6rem 0.6rem;
+  font-weight: 600;
+}
+
+.categoryProductInfoContainer > p {
+  margin: 10px;
+}
+
+.categoryProductVisitBtn {
+  display: grid;
+  place-items: center;
+  margin: 1rem 0;
+}

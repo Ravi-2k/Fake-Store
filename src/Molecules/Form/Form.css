@@ -1,0 +1,44 @@
+.form {
+  width: 60%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-top: 1.5rem;
+}
+
+.formField {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.formFieldLabel {
+  font-weight: 600;
+  margin-left: 10%;
+  flex-basis: 30%;
+}
+
+.formFieldInputFieldContainer {
+  flex-basis: 70%;
+  display: grid;
+  place-items: center;
+}
+
+.formFieldInputField {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  padding: 0.4rem 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+  border: 0.5px solid rgb(177, 171, 171);
+}
+
+.submitProfileFormBtn {
+  margin-top: 1.5rem;
+}

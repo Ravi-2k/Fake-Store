@@ -1,0 +1,33 @@
+.checkout {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.checkoutItemsContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+.checkoutBackToCartBtn {
+  width: 15%;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+}
+
+.checkoutBackToCartBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.checkoutFormContainer {
+  width: 60%;
+  border: 0.5px solid rgb(172, 165, 165);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}

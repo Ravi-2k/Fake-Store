@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+.cart {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartTotalContainer {
+  width: 20%;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  border-bottom: 0.5px solid rgb(173, 168, 168);
+  padding: 1rem 0;
+}
+
+.cartTotalContent {
+  font-size: 1.8rem;
+  color: rgb(80, 76, 76);
+}
+
+.cartTotal {
+  font-size: 2rem;
+  color: black;
+  margin-left: 1rem;
+}
+
+.cartItemsContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+.cartCheckOutBtn {
+  width: 30%;
+  margin: 2rem auto;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.emptyCartNotice {
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+  color: rgb(136, 129, 129);
+}

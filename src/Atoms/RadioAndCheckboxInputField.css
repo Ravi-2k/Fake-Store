@@ -1,0 +1,12 @@
+.radioAndCheckboxInputFieldContainer {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.radioAndCheckboxInputField {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}

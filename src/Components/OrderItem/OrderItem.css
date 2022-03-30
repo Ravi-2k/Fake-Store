@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+.orderItem {
+  width: 100%;
+  display: flex;
+  margin: 2rem 0;
+  border-bottom: 0.5px solid rgb(165, 159, 159);
+}
+
+.orderItemImageContainer {
+  flex-basis: 30%;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+  margin: 1rem;
+}
+
+.orderItemImageContainer > img {
+  width: 70%;
+}
+
+.orderItemInfoContainer {
+  flex-basis: 70%;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.orderItemInfoCategory {
+  color: gray;
+  text-transform: capitalize;
+}
+
+.orderItemInfoTitle {
+  margin: 1rem 0;
+  border-left: 4px solid gray;
+  padding-left: 0.6rem;
+}
+
+.orderItemInfoPrice {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.bold {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 0rem 0.3rem;
+}
+
+.orderItemInfoDesc {
+  font-size: 1.1rem;
+}
+
+.orderItemVisitItemBtn {
+  width: 25%;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.orderItemVisitItemBtn:hover {
+  background-color: white;
+  color: black;
+}

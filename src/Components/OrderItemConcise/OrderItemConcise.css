@@ -1,0 +1,25 @@
+.orderItemConcise {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.orderItemConciseImgContainer {
+  flex-basis: 30%;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+  margin: 1rem;
+}
+
+.orderItemConciseImg {
+  width: 40%;
+}
+
+.orderItemConciseInfoContainer > h5 {
+  color: rgb(117, 112, 112);
+}
+
+.orderItemConciseInfoContainerBold {
+  font-size: 1.4rem;
+}

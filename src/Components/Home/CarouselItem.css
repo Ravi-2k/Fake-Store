@@ -1,0 +1,10 @@
+.carouselImage {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.carouselItemInfo {
+  text-align: center;
+  margin: 2rem 0;
+}
