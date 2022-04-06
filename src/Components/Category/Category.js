@@ -5,17 +5,8 @@ import { Link } from "react-router-dom";
 import useHttpGetRequest from "../../CustomHooks/useHttpGetRequest";
 import Loading from "../Loading";
 
-function Category({ category, showLoadingSpinner }) {
-  const END_POINT = `https://fakestoreapi.com/products/category/${category}`;
-  const { payLoad: products, loading } = useHttpGetRequest(END_POINT, category);
-
-  return loading ? (
-    showLoadingSpinner ? (
-      <Loading />
-    ) : (
-      <></>
-    )
-  ) : (
+function Category({ category, products }) {
+  return (
     <div className="category">
       <div className="categoryHeading">{category.toUpperCase()}</div>
       <div className="categoryProductContainer">

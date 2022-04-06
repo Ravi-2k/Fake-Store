@@ -3,26 +3,18 @@ import Category from "../Category";
 import "./Products.css";
 import { Button } from "react-bootstrap";
 import Loading from "../Loading";
-import useHttpGetRequest from "../../CustomHooks/useHttpGetRequest";
-import useHttpGetRequests from "../../CustomHooks/useHttpGetRequests";
+import useGetProducts from "../../CustomHooks/useGetProducts";
 
 const END_POINT = "https://fakestoreapi.com/products/categories";
 
 function Products() {
-  const { payLoad: categories, loading } = useHttpGetRequest(END_POINT, "");
+  const { categories, categoryWiseProductsList, loading } =
+    useGetProducts(END_POINT);
   const [filteredCategory, setFilteredCategory] = useState(categories);
-  // let httpResponse;
 
   useEffect(() => {
-    if (!loading && categories.length) {
+    if (!loading) {
       setFilteredCategory(categories);
-      // const categoryWiseUrlList = [];
-      // categories.forEach((category) =>
-      //   categoryWiseUrlList.push(
-      //     `https://fakestoreapi.com/products/categories/${category}`
-      //   )
-      // );
-      // httpResponse = useHttpGetRequests(categoryWiseUrlList);
     }
   }, [loading]);
 
@@ -63,9 +55,7 @@ function Products() {
             <Category
               key={idx}
               category={category}
-              showLoadingSpinner={
-                !(filteredCategory.length === categories.length && idx > 0)
-              }
+              products={categoryWiseProductsList[category]}
             />
           );
         })}
